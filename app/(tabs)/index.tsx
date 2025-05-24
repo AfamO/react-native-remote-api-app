@@ -6,9 +6,11 @@ import { Text, View } from '@/components/Themed';
 export default function TabOneScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Tab One</Text>
-      <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-      <EditScreenInfo path="app/(tabs)/index.tsx" />
+      <Text style={styles.text}>HelloWorld! Coding has started on tab one.
+       Infact, we don't even need multiple tabs for our code to work. 
+       Feel free to startup project without specifying template and 
+       then purge with "npm run reset-project" to start without tabs. 
+       Easy to add tabs as well</Text>  
     </View>
   );
 }
@@ -16,16 +18,16 @@ export default function TabOneScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
+  backgroundColor: 'lightblue',
+  alignItems: 'center',
+  justifyContent: 'center',
+
   },
-  title: {
+  text:{
+    color: '#fff',
     fontSize: 20,
-    fontWeight: 'bold',
-  },
-  separator: {
-    marginVertical: 30,
-    height: 1,
-    width: '80%',
-  },
+    backgroundColor: 'blue',
+    padding: 6,
+    alignItems: 'center'
+  }
 });
