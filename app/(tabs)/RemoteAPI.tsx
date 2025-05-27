@@ -10,7 +10,7 @@ type Props={
     name?: string;
 }
 
-const RemoteAPIComponent : React.FC<Props> = ({name="ife"}) => {
+const RemoteAPIComponent : React.FC<Props> = ({name="Afam"}) => {
     const [userFetched, setUserFetched] = useState<UserFetched>({ user: null, error: null });
     const [userId, setUserId] = useState<string>('1');
     const [loading, setLoading] = useState<boolean>(true);
@@ -67,7 +67,8 @@ const RemoteAPIComponent : React.FC<Props> = ({name="ife"}) => {
     
     return (
        <ScrollView>
-            <View style={{ flex: 1, padding: 20, margin: 40, backgroundColor: '#f0f0f0', borderRadius: 10 }}>
+            <View style={{ flex: 1, padding: 20, margin: 40, 
+            backgroundColor: '#f0f0f0', borderRadius: 10 }}>
             <Text> Hello {name}, Welcome to our RemoteAPI  App</Text>
             </View>
         
@@ -83,4 +84,4 @@ const RemoteAPIComponent : React.FC<Props> = ({name="ife"}) => {
        </ScrollView>
         )
 };
-export default RemoteAPIComponent;
+export default RemoteAPIComponent; 
